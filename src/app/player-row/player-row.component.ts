@@ -33,9 +33,13 @@ export class PlayerRowComponent implements OnInit {
   }
 
   calculateBalanceAfterRelease = (player: any) => {
+    if (player.bidAmount !== 0) {
+      player.deduction = 25 / 100 * player.bidAmount;
+    }
+    console.log(player.deduction);
     this.releasedPlayers.push(player);
     player.bidAmount = 0;
-    player.plannedAmount = 0;
+    player.plannedAmount = 25;
   }
 
   clearThisPlayer(player: any) {
@@ -51,7 +55,7 @@ export class PlayerRowComponent implements OnInit {
 
   shrinkPlayersList(player: any) {
     this.playersList.forEach(listPlayer => {
-      if(listPlayer.isInList === false) {
+      if (listPlayer.isInList === false) {
         listPlayer.isInList = listPlayer.name === player.name;
       }
     });
@@ -59,7 +63,7 @@ export class PlayerRowComponent implements OnInit {
 
   restoreNameInList(player: any) {
     this.playersList.forEach(listPlayer => {
-      if(listPlayer.name === player.name) {
+      if (listPlayer.name === player.name) {
         listPlayer.isInList = false;
       }
     });

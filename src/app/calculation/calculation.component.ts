@@ -11,20 +11,22 @@ export class CalculationComponent implements OnInit {
   @ViewChild('maxbid') maxbid: ElementRef;
   @ViewChild('owner') owner: ElementRef;
   @Input() players: any[];
-  rotationDelta: number = 180;
+  totalDeductions: number = 0;
 
   constructor() {
   }
 
   ngOnInit() {
-  } 
+  }
 
   calculateBalance(): number {
     let amount: number = 0;
+    this.totalDeductions = 0;
     this.players.forEach(player => {
       amount += +player.bidAmount;
+      this.totalDeductions += +player.deduction;
     });
-    return (this.maxbid.nativeElement.value - this.owner.nativeElement.value) - amount;
+    return (this.maxbid.nativeElement.value - this.owner.nativeElement.value) - amount - this.totalDeductions;
   }
 
   getCurrentPlayerListOnTable(team: string): any[] {
@@ -37,10 +39,6 @@ export class CalculationComponent implements OnInit {
     }
     uniqueTempPlayers = _.uniqBy(tempPlayers, 'name');
     return uniqueTempPlayers;
-  }
-
-  addReleaseAmount(data) {
-    console.log(data);
   }
 
   setRotationDelta = (delta: number) => {

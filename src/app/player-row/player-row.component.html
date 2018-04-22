@@ -42,7 +42,7 @@
       </select>
     </td>
     <td>
-      <input class="form-control small-text input-sm" type="number" [(ngModel)]="player.bidAmount" [disabled]="canEnterBid(player.plannedAmount)">
+      <input class="form-control small-text input-sm" type="number" [(ngModel)]="player.bidAmount" [disabled]="canEnterBid(player.plannedAmount) || player.isReleased">
     </td>
     <td>
       <input class="form-control small-text input-sm" type="number" [(ngModel)]="player.plannedAmount" [ngClass]="{'hide-plan' : togglePlanAmount}">

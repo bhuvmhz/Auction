@@ -13,7 +13,8 @@ export class DataService {
         bidAmount: null,
         plannedAmount: 25,
         exceedAmount: null,
-        isReleased: false
+        isReleased: false,
+        deduction: 0
       });
     }
   }
