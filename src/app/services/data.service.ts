@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import * as _ from 'lodash';
 
 @Injectable()
 export class DataService {
@@ -224,11 +225,18 @@ export class DataService {
   }
 
   getPlayersList(): string[] {
-
     return this.playersList;
   }
 
-  selectPlayersByTeam(team: string) {
-
+  getCurrentPlayerListOnTable(team: string): any[] {
+    var tempPlayers: any;
+    var uniqueTempPlayers: any;
+    if (team === 'KeralaFC') {
+      tempPlayers = _.filter(this.players, { team: team, isReleased: false });
+    } else {
+      tempPlayers = _.filter(this.players, { team: team });
+    }
+    uniqueTempPlayers = _.uniqBy(tempPlayers, 'name');
+    return uniqueTempPlayers;
   }
 }

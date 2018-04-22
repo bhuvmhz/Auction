@@ -1,0 +1,26 @@
+<div class="calc pull-right">
+  <table class="table">
+    <tr>
+      <th>Max Bid Amt</th>
+      <th>Playing Owner</th>
+      <th>BALANCE</th>
+    </tr>
+    <tr>
+      <td>
+        <input class="form-control" #maxbid id="maxbid" name="maxbid" type="text" size="5" [disabled]="true" value="1000" />
+      </td>
+      <td>
+        <input class="form-control" #owner id="owner" name="owner" type="text" size="5" [disabled]="true" value="150" />
+      </td>
+      <td>
+        <input class="form-control" #balance id="balance" name="balance" size="5" [disabled]="true" [value]="calculateBalance()"
+        />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" style="text-align: center">Total Released Amount
+        <h3 style="color: red">{{totalDeductions}}</h3>
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,60 @@
+<button class="btn" data-toggle="modal" data-target="#myModalPlayersList">View Players By Team</button>
+<!-- Modal -->
+<div class="modal fade" id="myModalPlayersList" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content" style="text-align: center">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">View Players By Team</h3>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-3">
+            <table class="table table-striped table-hover" style="color: Tomato;">
+              <tr>
+                <th class="team-header">KERALAFC</th>
+              </tr>
+              <tr *ngFor="let player of getCurrentPlayerListOnTable('KeralaFC')" [hidden]="player.name === ''">
+                <td>{{player.name}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-3">
+            <table class="table table-striped table-hover" style="color: DodgerBlue;">
+              <tr>
+                <th class="team-header">RISING</th>
+              </tr>
+              <tr *ngFor="let player of getCurrentPlayerListOnTable('Rising')" [hidden]="player.name === ''">
+                <td>{{player.name}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-3">
+            <table class="table table-striped table-hover" style="color: maroon;">
+              <tr>
+                <th class="team-header">TINTUMON</th>
+              </tr>
+              <tr *ngFor="let player of getCurrentPlayerListOnTable('Tintumon')" [hidden]="player.name === ''">
+                <td>{{player.name}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-3">
+            <table class="table table-striped table-hover" style="color: MediumSeaGreen;">
+              <tr>
+                <th class="team-header">COCHINFC</th>
+              </tr>
+              <tr *ngFor="let player of getCurrentPlayerListOnTable('CochinFC')" [hidden]="player.name === ''">
+                <td>{{player.name}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

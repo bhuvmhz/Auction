@@ -7,15 +7,23 @@ import { DataService } from './services/data.service';
 
 import { AppComponent } from './app.component';
 import { PlayerRowComponent } from './player-row/player-row.component';
-import { CalculationComponent } from './calculation/calculation.component';
+import { CalculationPanelComponent } from './calculation-panel/calculation-panel.component';
 import { HeaderComponent } from './header/header.component';
+import { BestPlayersComponent } from './best-players/best-players.component';
+import { SoccerFieldComponent } from './soccer-field/soccer-field.component';
+import { PlayerByTeamComponent } from './player-by-team/player-by-team.component';
+import { BidAndBalanceCalculationComponent } from './bid-and-balance-calculation/bid-and-balance-calculation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlayerRowComponent,
-    CalculationComponent,
-    HeaderComponent
+    CalculationPanelComponent,
+    HeaderComponent,
+    BestPlayersComponent,
+    SoccerFieldComponent,
+    PlayerByTeamComponent,
+    BidAndBalanceCalculationComponent
   ],
   imports: [
     BrowserModule,

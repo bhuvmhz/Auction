@@ -1,0 +1,19 @@
+.calc {
+    display: flex;
+    flex-flow: left;
+    padding-bottom: 15px;
+
+    th, td {
+        padding: 15px;
+    }
+
+    th {
+        color: green;
+    }
+
+    input {
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+}

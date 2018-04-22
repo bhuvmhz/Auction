@@ -1,0 +1,42 @@
+<button class="btn" data-toggle="modal" data-target="#myModalGround">3D Field Preview</button>
+<!-- Modal -->
+<div class="modal fade" id="myModalGround" role="dialog">
+  <div class="modal-dialog modal-lg">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="text-align: center; position: 'relative';">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h3 class="modal-title">3D Field Preview</h3>
+        <br/>
+        <button class="btn degrees" (click)="setRotationDelta(360)">
+          <span class="glyphicon glyphicon-repeat"></span>
+          <br/>Default View
+        </button>
+        <button class="btn degrees" (click)="setRotationDelta(-30)">
+          <span class="glyphicon glyphicon-repeat"></span>
+          <br/>-30
+          <sup>o</sup>
+        </button>
+        <button class="btn degrees" (click)="setRotationDelta(-45)">
+          <span class="glyphicon glyphicon-repeat"></span>
+          <br/>-45
+          <sup>o</sup>
+        </button>
+      </div>
+      <div class="modal-body soccer-body" style="background-image: url(./assets/images/football-field.png);">
+        <div class="players">
+          <div ngDraggable class="player" *ngFor="let player of getCurrentPlayerListOnTable('KeralaFC')">
+            <span class="glyphicon glyphicon-user"></span>
+            <p>{{player.name.split(' ').slice(0, -1)[0]}}
+              <br/>
+              <span style="color: yellow; font-size: 8pt;">{{player.position[0]}}</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
