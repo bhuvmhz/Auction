@@ -9,31 +9,26 @@
         <h3 class="modal-title">Best Players</h3>
       </div>
       <div class="modal-body soccer-body">
-        
-        <div class="best-teams">
-          <div class="best team1" id="wrapper-0">
-            <h3>Best Team</h3>
-            <ul></ul>
+        <div class="best-teams ratings" >
+          <div *ngFor="let bestTeam of bestFinalProcessed; let i=index">
+            <table class="table table-striped table-hover">
+              <tr>
+                <td colspan="3">
+                  <h4>{{getWordPosition(i)}}</h4>
+                </td>
+              </tr>
+              <tr>
+                <th>Player</th>
+                <th>Position</th>
+                <th>Rating</th>
+              </tr>
+              <tr *ngFor="let playerData of bestTeam">
+                <td>{{playerData.Player}}</td>
+                <td>{{playerData.Position}}</td>
+                <td>{{playerData.Rating}}</td>
+              </tr>
+            </table>
           </div>
-          <br>
-          <div class="best team2" id="wrapper-1">
-            <h3>Second Best</h3>
-            <ul></ul>
-          </div>
-          <br>
-          <div class="best team3" id="wrapper-2">
-            <h3>Third Best</h3>
-            <ul></ul>
-          </div>
-          <div class="best team4" id="wrapper-3">
-            <h3>Fourth Best</h3>
-            <ul></ul>
-          </div>
-          <div class="best team5" id="wrapper-4">
-            <h3>Fifth Best</h3>
-            <ul></ul>
-          </div>
-
         </div>
       </div>
       <div class="modal-footer">

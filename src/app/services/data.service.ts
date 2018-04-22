@@ -23,175 +23,175 @@ export class DataService {
   playersList: any[] = [
     {
       name: 'Amal George',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Arun Karunakaran',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Arun Niravath',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Asheak Mankidy',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Anil Vincent',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Basty Kudiyate',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Ben Thomas',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Bibin Bose',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Bibin Thambi',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Bijin Paul',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Dinto Devassy',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Dinto Ittiachan',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Devalal P N',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Faheem Moothorakayil',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Georgy Varghese',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Hafiz P K',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Jackson Francis',
-      isInList : false
+      isInList: false
     },
     {
       name: 'John Antony Akkara',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Jac George',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Joe Jose',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Jibin George',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Jithin Mohan',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Julius Poulose Udhini',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Kevin John Cleatus',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Kishan Jayan',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Mohammed Niyas',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Midhun Jackson',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Mohammed Aslam',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Nixon Felix',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Nithin Palatty',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Praveen Baby',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Rajeev George',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Robin Johny',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Robinson Kodiyan',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Sajan Kurian',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Sayyed Najmudheen',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Sajish Gopalakrishnan',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Simon Yeldos',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Tarun Nambiar',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Tony Thomas',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Vibindas Koloth',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Vinod Mathew',
-      isInList : false
+      isInList: false
     },
     {
       name: 'Vaisakh Nambiar',
-      isInList : false
+      isInList: false
     }
   ];
 
@@ -211,6 +211,60 @@ export class DataService {
   ];
 
   positions: string[] = ['Forward', 'Defense', 'Goal Keeper'];
+
+  teamRatings: any[] = [
+    { "Player": "Arun Karunakaran", "Position": "GK", "Rating": 3.25 },
+    { "Player": "Arun Niravath", "Position": "Forward", "Rating": 3.00 },
+    { "Player": "Asheak Mankidy", "Position": "Defense", "Rating": 2.75 },
+    { "Player": "Amal George", "Position": "Defense", "Rating": 4.10 },
+    { "Player": "Anil Vincent", "Position": "Forward", "Rating": 3.75 },
+    { "Player": "Basty Kudiyate", "Position": "GK", "Rating": 3.65 },
+    { "Player": "Ben Thomas", "Position": "Forward", "Rating": 3.0 },
+    { "Player": "Bibin Bose", "Position": "GK", "Rating": 2.65 },
+    { "Player": "Bibin Thambi", "Position": "Forward", "Rating": 2.5 },
+    { "Player": "Bijin Paul", "Position": "Defense", "Rating": 2.85 },
+    { "Player": "Dinto Devassy", "Position": "Forward", "Rating": 3.1 },
+    { "Player": "Dinto Ittiachan", "Position": "Forward", "Rating": 3.5 },
+    { "Player": "Devalal P N", "Position": "Forward", "Rating": 4.15 },
+    { "Player": "Faheem Moothorakayil", "Position": "Defense", "Rating": 3.95 },
+    { "Player": "Georgy Varghese", "Position": "Forward", "Rating": 3.35 },
+    { "Player": "Hafiz P K", "Position": "Forward", "Rating": 4.0 },
+    { "Player": "Jackson Francis", "Position": "Forward", "Rating": 2.75 },
+    { "Player": "John Antony Akkara", "Position": "Forward", "Rating": 4.75 },
+    { "Player": "Jac George", "Position": "Forward", "Rating": 2.75 },
+    { "Player": "Joe Jose", "Position": "Forward", "Rating": 3.10 },
+    { "Player": "Jibin George", "Position": "Defense", "Rating": 3.5 },
+    { "Player": "Jithin Mohan", "Position": "Forward", "Rating": 3.85 },
+    { "Player": "Julius Poulose Udhini", "Position": "Defense", "Rating": 2.75 },
+    { "Player": "Kevin John Cleatus", "Position": "Forward", "Rating": 4.25 },
+    { "Player": "Kishan Jayan", "Position": "Forward", "Rating": 3.35 },
+    { "Player": "Mohammed Niyas", "Position": "Defense", "Rating": 3.75 },
+    { "Player": "Midhun Jackson", "Position": "Forward", "Rating": 4.20 },
+    { "Player": "Mohammed Aslam", "Position": "Forward", "Rating": 3.65 },
+    { "Player": "Nixon Felix", "Position": "GK", "Rating": 2.5 },
+    { "Player": "Nithin Palatty", "Position": "Defense", "Rating": 3.30 },
+    { "Player": "Praveen Baby", "Position": "GK", "Rating": 3.80 },
+    { "Player": "Rajeev George", "Position": "Forward", "Rating": 2.5 },
+    { "Player": "Robin Johny", "Position": "Forward", "Rating": 4.55 },
+    { "Player": "Robinson Kodiyan", "Position": "Defense", "Rating": 2.5 },
+    { "Player": "Rony Roby", "Position": "Defense", "Rating": 2.75 },
+    { "Player": "Sajan Kurian", "Position": "Defense", "Rating": 4.80 },
+    { "Player": "Sayyed	Najmudheen", "Position": "Defense", "Rating": 3.95 },
+    { "Player": "Sajish	Gopalakrishnan", "Position": "GK", "Rating": 3.45 },
+    { "Player": "Srikanth keezhamadathil", "Position": "Forward", "Rating": 2.75 },
+    { "Player": "Simon Yeldos", "Position": "Forward", "Rating": 4.85 },
+    { "Player": "Tarun Nambiar", "Position": "Forward", "Rating": 4.25 },
+    { "Player": "Tony Thomas", "Position": "Forward", "Rating": 2.65 },
+    { "Player": "Vibindas Koloth", "Position": "Defense", "Rating": 3.80 },
+    { "Player": "Vinod Mathew", "Position": "Forward", "Rating": 3.45 },
+    { "Player": "Vaisakh Nambiar", "Position": "Defense", "Rating": 3.20 }
+  ];
+
+  formation: any = {
+    "GK": 1,
+    "Defense": 4,
+    "Forward": 4
+  };
 
   getPlayers(): any[] {
     return this.players;

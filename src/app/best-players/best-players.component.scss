@@ -1,0 +1,25 @@
+h3 {
+    color: red;
+}
+
+h4 {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    background-color: green;
+}
+
+table {
+    tr {
+        td {
+            width: 140px;
+        }
+    }
+}
+
+.ratings {
+    display: flex;
+    flex-flow: row; 
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
