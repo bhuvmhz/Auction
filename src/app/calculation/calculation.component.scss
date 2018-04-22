@@ -1,0 +1,78 @@
+.calc {
+    display: flex;
+    flex-flow: left;
+    padding-bottom: 15px;
+
+    th, td {
+        padding: 15px;
+    }
+
+    th {
+        color: green;
+    }
+
+    input {
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+}
+
+.team-header {
+    text-align: center;
+}
+
+.players {
+    display: flex; 
+    flex-direction: row; 
+    -ms-flex-align:center;
+    justify-content: space-around;
+    z-index: 999; 
+    position: absolute;
+}
+
+.player {
+    height: 40px; 
+    width: 40px; 
+    background-color: #ed1750;
+    cursor: all-scroll;
+    padding-top: 6px;
+    color: yellow;
+    border-radius: 20px;
+    border: 1px solid #ffffff;
+    margin: 10px;
+
+    span {
+        font-size: 14pt;
+    }
+
+    p {
+        padding-top: 10px;
+        color: rgb(40, 22, 206);
+        font-size: 8pt;
+    }
+}
+
+.soccer-body {
+    background-repeat: no-repeat;
+    background-size: 865px 400px;
+    margin: 15px; 
+    height: 400px; 
+    width: 865px; 
+    text-align: center;
+    transform: scale(0.9, 0.9);
+}
+
+.degrees {
+    padding-top: 5px;
+    margin-right: 20px;
+}
+
+#getFixed {
+    color: #c00;
+    font: bold 15px arial;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #c00;
+    width: 200px;
+}

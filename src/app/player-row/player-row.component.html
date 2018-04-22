@@ -1,0 +1,60 @@
+<app-calculation [players]="players"></app-calculation>
+<table class="table table-hover">
+  <tr>
+    <th></th>
+    <th>Player Name</th>
+    <th>Position</th>
+    <th>Team</th>
+    <th>Bid Amt</th>
+    <th>Planned Amt
+      <br/>
+      <button class="btn" (click)="togglePlan()">
+        <span class="glyphicon glyphicon-eye-close eye"></span>
+      </button>
+    </th>
+    <th>Amt Exceeded</th>
+    <th>Release Player</th>
+  </tr>
+  <tr *ngFor="let player of players" [ngStyle]="{'color':player.isReleased === true ? 'red' : 'black' }">
+    <td>
+      <button class="btn" (click)="clearThisPlayer(player)" [disabled]="player.isReleased">
+        <span class="glyphicon glyphicon-refresh refresh"></span>
+      </button>
+    </td>
+    <td>
+      <select class="form-control input-sm" [(ngModel)]="player.name" [disabled]="player.isReleased" (change)="shrinkPlayersList(player)">
+        <option value="-">-</option>
+        <option *ngFor="let pl of playersList; let i = index" [value]="pl.name" [hidden]="pl.isInList">
+          {{pl.name}}
+        </option>
+      </select>
+    </td>
+    <td>
+      <select class="form-control input-sm" [(ngModel)]="player.position" [disabled]="player.isReleased">
+        <option value="-">-</option>
+        <option *ngFor="let position of positions" [value]="position">{{position}}</option>
+      </select>
+    </td>
+    <td>
+      <select class="form-control input-sm" [(ngModel)]="player.team" [disabled]="player.isReleased">
+        <option value="-">-</option>
+        <option *ngFor="let team of teams" [value]="team.name">{{team.name}}</option>
+      </select>
+    </td>
+    <td>
+      <input class="form-control small-text input-sm" type="number" [(ngModel)]="player.bidAmount" [disabled]="canEnterBid(player.plannedAmount)">
+    </td>
+    <td>
+      <input class="form-control small-text input-sm" type="number" [(ngModel)]="player.plannedAmount" [ngClass]="{'hide-plan' : togglePlanAmount}">
+    </td>
+    <td>
+      <input class="form-control small-text input-sm" type="number" [disabled]="true" [(ngModel)]="player.exceedAmount" [value]="calculateExceedAmount(+player.plannedAmount, +player.bidAmount)"
+        style="color: red">
+    </td>
+    <td>
+      <label class="release">
+        <input type="checkbox" [(ngModel)]="player.isReleased" (change)="calculateBalanceAfterRelease(player)"> Release
+      </label>
+    </td>
+  </tr>
+</table>

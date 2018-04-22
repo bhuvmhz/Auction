@@ -1,0 +1,47 @@
+input[type=checkbox]
+{
+  margin-top: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+input {
+  text-align: center;
+}
+
+th {
+  color: green;
+}
+
+select {
+  width: 170px !important;
+}
+
+.hide-plan {
+  color: #ffffff;
+}
+
+.release {
+  cursor: pointer;
+  :hover{
+    color: red;
+  }
+}
+
+.small-text {
+  width: 100px;
+}
+
+.eye {
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 3px;
+  width: 74px;
+}
+
+.refresh {
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+}
