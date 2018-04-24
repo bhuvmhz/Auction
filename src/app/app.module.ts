@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { AngularDraggableModule } from 'angular2-draggable';
 import { NgModule } from '@angular/core';
+
 import { FormsModule } from '@angular/forms';
 import { DataService } from './services/data.service';
 
@@ -28,6 +30,7 @@ import { BidAndBalanceCalculationComponent } from './bid-and-balance-calculation
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AngularDraggableModule
   ],
   providers: [DataService],

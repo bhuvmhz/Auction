@@ -1,0 +1,257 @@
+[
+    {
+        "Player": "Arun Karunakaran",
+        "Position": "GK",
+        "Rating": 3.25
+    },
+    {
+        "Player": "Arun Niravath",
+        "Position": "Forward",
+        "Rating": 3.00
+    },
+    {
+        "Player": "Allwin Alex",
+        "Position": "Forward",
+        "Rating": 3.45
+    },
+    {
+        "Player": "Asheak Mankidy",
+        "Position": "GK",
+        "Rating": 3.5
+    },
+    {
+        "Player": "Amal George",
+        "Position": "Defense",
+        "Rating": 4.10
+    },
+    {
+        "Player": "Anil Vincent",
+        "Position": "Forward",
+        "Rating": 3.85
+    },
+    {
+        "Player": "Basty Kudiyate",
+        "Position": "GK",
+        "Rating": 3.65
+    },
+    {
+        "Player": "Ben Thomas",
+        "Position": "Forward",
+        "Rating": 3.0
+    },
+    {
+        "Player": "Bibin Bose",
+        "Position": "Defense",
+        "Rating": 2.65
+    },
+    {
+        "Player": "Bibin Thambi",
+        "Position": "Defense",
+        "Rating": 4.35
+    },
+    {
+        "Player": "Bijin Paul",
+        "Position": "Defense",
+        "Rating": 2.95
+    },
+    {
+        "Player": "Davis Mathew",
+        "Position": "Forward",
+        "Rating": 2.75
+    },
+    {
+        "Player": "Dinto Devassy",
+        "Position": "Forward",
+        "Rating": 3.15
+    },
+    {
+        "Player": "Dinto Ittiachan",
+        "Position": "Defense",
+        "Rating": 3.5
+    },
+    {
+        "Player": "Devalal P N",
+        "Position": "Forward",
+        "Rating": 4.15
+    },
+    {
+        "Player": "Ebin PK",
+        "Position": "GK",
+        "Rating": 3.5
+    },
+    {
+        "Player": "Faheem Moothorakayil",
+        "Position": "Forward",
+        "Rating": 3.95
+    },
+    {
+        "Player": "Georgy Varghese",
+        "Position": "Forward",
+        "Rating": 3.35
+    },
+    {
+        "Player": "Hafiz P K",
+        "Position": "Forward",
+        "Rating": 4.0
+    },
+    {
+        "Player": "Jackson Francis",
+        "Position": "Forward",
+        "Rating": 2.75
+    },
+    {
+        "Player": "John Antony Akkara",
+        "Position": "Forward",
+        "Rating": 4.85
+    },
+    {
+        "Player": "Jac George",
+        "Position": "Forward",
+        "Rating": 2.75
+    },
+    {
+        "Player": "Joe Jose",
+        "Position": "Defense",
+        "Rating": 3.10
+    },
+    {
+        "Player": "Jibin George",
+        "Position": "Forward",
+        "Rating": 3.5
+    },
+    {
+        "Player": "Jithin Mohan",
+        "Position": "Forward",
+        "Rating": 3.85
+    },
+    {
+        "Player": "Julius Poulose Udhini",
+        "Position": "Forward",
+        "Rating": 2.75
+    },
+    {
+        "Player": "Kevin John Cleatus",
+        "Position": "Forward",
+        "Rating": 4.25
+    },
+    {
+        "Player": "Kishan Jayan",
+        "Position": "Forward",
+        "Rating": 3.35
+    },
+    {
+        "Player": "Mohammed Niyas",
+        "Position": "Defense",
+        "Rating": 3.75
+    },
+    {
+        "Player": "Midhun Jackson",
+        "Position": "Forward",
+        "Rating": 4.20
+    },
+    {
+        "Player": "Mohammed Aslam",
+        "Position": "Forward",
+        "Rating": 3.65
+    },
+    {
+        "Player": "Nixon Felix",
+        "Position": "Defense",
+        "Rating": 2.5
+    },
+    {
+        "Player": "Nithin Palatty",
+        "Position": "Defense",
+        "Rating": 3.30
+    },
+    {
+        "Player": "Praveen Baby",
+        "Position": "GK",
+        "Rating": 3.85
+    },
+    {
+        "Player": "Prince Menon",
+        "Position": "Defense",
+        "Rating": 3.80
+    },
+    {
+        "Player": "Rajeev George",
+        "Position": "Defense",
+        "Rating": 2.5
+    },
+    {
+        "Player": "Robin Johny",
+        "Position": "Forward",
+        "Rating": 4.65
+    },
+    {
+        "Player": "Robinson Kodiyan",
+        "Position": "Defense",
+        "Rating": 2.5
+    },
+    {
+        "Player": "Rony Roby",
+        "Position": "Forward",
+        "Rating": 2.75
+    },
+    {
+        "Player": "Sajan Kurian",
+        "Position": "Defense",
+        "Rating": 4.80
+    },
+    {
+        "Player": "Sayyed	Najmudheen",
+        "Position": "Defense",
+        "Rating": 4.15
+    },
+    {
+        "Player": "Sajish	Gopalakrishnan",
+        "Position": "GK",
+        "Rating": 3.65
+    },
+    {
+        "Player": "Srikanth keezhamadathil",
+        "Position": "Defense",
+        "Rating": 2.75
+    },
+    {
+        "Player": "Simon Yeldos",
+        "Position": "Forward",
+        "Rating": 4.80
+    },
+    {
+        "Player": "Siby George",
+        "Position": "Forward",
+        "Rating": 2.75
+    },
+    {
+        "Player": "Sujith Babu",
+        "Position": "Defense",
+        "Rating": 3.00
+    },
+    {
+        "Player": "Tarun Nambiar",
+        "Position": "Forward",
+        "Rating": 4.25
+    },
+    {
+        "Player": "Tony Thomas",
+        "Position": "Defense",
+        "Rating": 2.65
+    },
+    {
+        "Player": "Vibindas Koloth",
+        "Position": "Defense",
+        "Rating": 4.1
+    },
+    {
+        "Player": "Vinod Mathew",
+        "Position": "Forward",
+        "Rating": 3.55
+    },
+    {
+        "Player": "Vaisakh Nambiar",
+        "Position": "Defense",
+        "Rating": 3.20
+    }
+]

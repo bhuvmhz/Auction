@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import * as _ from 'lodash';
 
 @Injectable()
 export class DataService {
   players: any = [];
-  constructor() {
-    //total 44 players
+  constructor(private http: HttpClient) {
     for (let i = 0; i < 43; i++) {
       this.players.push({
         name: '',
