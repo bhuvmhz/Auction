@@ -9,14 +9,20 @@ import { DataService } from './services/data.service';
 
 export class AppComponent {
   players: any[];
-  teams: any[];
-  positions: string[];
-  playersList: string[];
+  teams: any;
+  positions: string[];  
+  playersList: any;
 
   constructor(dataService: DataService) {
     this.players = dataService.getPlayers();
-    this.playersList = dataService.getPlayersList();
-    this.teams = dataService.getTeams();
     this.positions = dataService.getPositions();
+
+    dataService.getPlayersList().subscribe( data => {
+      this.playersList = data;
+    });
+
+    dataService.getTeams().subscribe(data => {
+      this.teams = data
+    });
   }
 }

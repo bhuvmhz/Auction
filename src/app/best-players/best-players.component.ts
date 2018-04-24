@@ -14,12 +14,16 @@ export class BestPlayersComponent implements OnInit {
   bestFinalProcessed: any = [];
 
   constructor(private dataService: DataService) {
-    this.teamRatings = dataService.teamRatings;
+    dataService.getTeamRatings().subscribe(data => {
+      this.teamRatings = data;
+    });
     this.formation = dataService.formation;
   }
 
   ngOnInit() {
-    this.theBestTeams();
+    setTimeout(() => {
+      this.theBestTeams();
+    }, 1000);
   }
 
   getCurrentPlayerListOnTable(team: string): any[] {
