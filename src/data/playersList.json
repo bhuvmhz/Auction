@@ -1,5 +1,9 @@
 [
     {
+        "name": "Allwin Alex",
+        "isInList": false
+    },
+    {
         "name": "Amal George",
         "isInList": false
     },
@@ -40,6 +44,10 @@
         "isInList": false
     },
     {
+        "name": "Davis Mathew",
+        "isInList": false
+    },
+    {
         "name": "Dinto Devassy",
         "isInList": false
     },
@@ -49,6 +57,10 @@
     },
     {
         "name": "Devalal P N",
+        "isInList": false
+    },
+    {
+        "name": "Ebin P K",
         "isInList": false
     },
     {
@@ -124,6 +136,10 @@
         "isInList": false
     },
     {
+        "name": "Prince Menon",
+        "isInList": false
+    },
+    {
         "name": "Rajeev George",
         "isInList": false
     },
@@ -149,6 +165,14 @@
     },
     {
         "name": "Simon Yeldos",
+        "isInList": false
+    },
+    {
+        "name": "Siby George",
+        "isInList": false
+    },
+    {
+        "name": "Sujith Babu",
         "isInList": false
     },
     {
