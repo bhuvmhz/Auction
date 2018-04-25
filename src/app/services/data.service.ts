@@ -34,15 +34,15 @@ export class DataService {
   };
 
   getPlayersList() {
-    return this.httpClient.get('../../assets/data/playersList.json');
+    return this.httpClient.get('./data/playersList.json');
   }
 
   getTeams() {
-    return this.httpClient.get('../../assets/data/teams.json');
+    return this.httpClient.get('./data/teams.json');
   };
 
   getTeamRatings() {
-    return this.httpClient.get('../../assets/data/playerRatings.json');
+    return this.httpClient.get('./data/playerRatings.json');
   };
 
   getPositions(): string[] {
