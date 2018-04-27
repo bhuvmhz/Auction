@@ -53,12 +53,18 @@ export class PlayerRowComponent implements OnInit {
     player.isReleased = false;
   }
 
+  isRealPlayer(player) {
+    return player.name !== "-";
+  }
+
   shrinkPlayersList(player: any) {
-    this.playersList.forEach(listPlayer => {
-      if (listPlayer.isInList === false) {
-        listPlayer.isInList = listPlayer.name === player.name;
-      }
-    });
+    if (this.isRealPlayer(player)) {
+      this.playersList.forEach(listPlayer => {
+        if (listPlayer.isInList === false) {
+          listPlayer.isInList = listPlayer.name === player.name;
+        }
+      });
+    }
   }
 
   restoreNameInList(player: any) {
