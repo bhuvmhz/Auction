@@ -1,3 +1,8 @@
 .spacer {
     margin-top: 15px;
 }
+
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
