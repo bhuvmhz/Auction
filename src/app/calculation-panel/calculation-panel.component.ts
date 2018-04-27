@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-calculation-panel',
@@ -6,7 +6,16 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./calculation-panel.component.scss']
 })
 export class CalculationPanelComponent implements OnInit {
+  isFix: boolean = false;
   @Input() players;
+  @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
+    var y = $event.currentTarget.scrollY;
+    if (y <= 202) {
+      this.isFix = false;
+    } else {
+      this.isFix = true;
+    }
+  }
 
   constructor() {
   }

@@ -1,3 +1,18 @@
 strong {
     color: green;
 }
+
+#fixitstyle {
+    background-color: rgb(221, 218, 217);
+    z-index: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.fixit {
+    position: fixed;
+    width: 100%;
+    margin-top: -202px;
+    border-bottom: 2px rgb(197, 193, 191) solid;
+    scroll-behavior: smooth;
+}
