@@ -7,7 +7,7 @@ export class DataService {
   players: any = [];
 
   constructor(private httpClient: HttpClient) {
-    for (let i = 0; i < 48; i++) {
+    for (let i = 0; i < 50; i++) {
       this.players.push({
         name: '',
         position: '',
