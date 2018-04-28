@@ -25,7 +25,7 @@
           </tr>
           <tr>
             <td colspan="3">
-              <label>
+              <label style="cursor: pointer">
                 <input type="checkbox" [(ngModel)]="showRecorder">{{showRecorder? " Hide" : " Show"}} Recorder</label>
               <app-record-rtc [ngClass]="{'hideRecorder' : !showRecorder}"></app-record-rtc>
             </td>
