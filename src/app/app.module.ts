@@ -15,6 +15,7 @@ import { BestPlayersComponent } from './best-players/best-players.component';
 import { SoccerFieldComponent } from './soccer-field/soccer-field.component';
 import { PlayerByTeamComponent } from './player-by-team/player-by-team.component';
 import { BidAndBalanceCalculationComponent } from './bid-and-balance-calculation/bid-and-balance-calculation.component';
+import { RecordRtcComponent } from './record-rtc/record-rtc.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BidAndBalanceCalculationComponent } from './bid-and-balance-calculation
     BestPlayersComponent,
     SoccerFieldComponent,
     PlayerByTeamComponent,
-    BidAndBalanceCalculationComponent
+    BidAndBalanceCalculationComponent,
+    RecordRtcComponent
   ],
   imports: [
     BrowserModule,

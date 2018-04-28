@@ -24,7 +24,11 @@
             </td>
           </tr>
           <tr>
-            <td colspan="3" style="text-align: center; color: blueviolet;"><h3>Total Players: {{players.length}}</h3></td>
+            <td colspan="3">
+              <label>
+                <input type="checkbox" [(ngModel)]="showRecorder">{{showRecorder? " Hide" : " Show"}} Recorder</label>
+              <app-record-rtc [ngClass]="{'hideRecorder' : !showRecorder}"></app-record-rtc>
+            </td>
           </tr>
         </table>
       </div>

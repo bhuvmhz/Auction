@@ -12,7 +12,11 @@ strong {
 .fixit {
     position: fixed;
     width: 100%;
-    margin-top: -202px;
+    margin-top: -135px;
     border-bottom: 2px rgb(197, 193, 191) solid;
     scroll-behavior: smooth;
+}
+
+.hideRecorder {
+    display: none;
 }

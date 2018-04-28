@@ -1,0 +1,16 @@
+<div class="well">
+  <div class="row">
+    <div class="col-md-8">
+      <button class="btn btn-success" (click)="startRecording()">Record</button>
+      <button class="btn btn-danger" (click)="stopRecording()">Stop</button>
+    </div>
+    <div class="col-md-4" pull-right>
+      <button class="btn btn-info" push-right (click)="download()">Download</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <video #video class="video"></video>
+    </div>
+  </div>
+</div>

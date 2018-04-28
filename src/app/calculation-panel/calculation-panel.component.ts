@@ -10,7 +10,7 @@ export class CalculationPanelComponent implements OnInit {
   @Input() players;
   @HostListener('window:scroll', ['$event']) onScrollEvent($event) {
     var y = $event.currentTarget.scrollY;
-    if (y <= 202) {
+    if (y <= 135) {
       this.isFix = false;
     } else {
       this.isFix = true;
